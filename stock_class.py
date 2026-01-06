@@ -96,6 +96,5 @@ class Stock:
             return market_cap
         except KeyError:
             self.eligible = False
-
-    def clamp(val, low, high):
-        return max(low, min(val, high))
+def clamp(val, low, high):
+    return max(low, min(val, high))
